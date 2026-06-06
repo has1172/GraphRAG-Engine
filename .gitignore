@@ -1,0 +1,79 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+
+# ── Environment Variables (NEVER commit secrets) ──────────────────────────────
+.env
+.env.*
+*.env
+!.env.example          # Allow a safe example template to be committed
+
+# ── Neo4j Database Files (Docker volumes) ─────────────────────────────────────
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+neo4j/plugins/
+
+# ── IDE & Editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Testing & Coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# ── Type Checking ─────────────────────────────────────────────────────────────
+.mypy_cache/
+.pyright/
+.pyrefly/
+pyrightconfig.json
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Screenshots (add your own, don't commit large binaries to git) ────────────
+# screenshots/
+# Uncomment the line above if you don't want screenshots tracked.
+# Leave it commented to allow screenshots to be committed (recommended for README).
+
+# ── Temporary / Scratch Files ─────────────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+scratch/

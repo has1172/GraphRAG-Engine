@@ -1,0 +1,112 @@
+# GraphRAG Engine — Python Dependencies
+# Generated from: .venv\Scripts\pip freeze
+# Python: 3.13 (use 3.11 or 3.12 for best compatibility)
+#
+# Install with:
+#   python -m venv .venv
+#   .venv\Scripts\activate          # Windows
+#   source .venv/bin/activate       # macOS / Linux
+#   pip install -r requirements.txt
+
+# ── Core LlamaIndex ────────────────────────────────────────────────────────────
+llama-index==0.14.22
+llama-index-core==0.14.22
+llama-index-instrumentation==0.5.0
+llama-index-workflows==2.20.0
+
+# ── Ollama Integration (local LLM + embeddings) ────────────────────────────────
+llama-index-llms-ollama==0.10.1
+llama-index-embeddings-ollama==0.9.0
+ollama==0.6.2
+
+# ── Neo4j Graph Store ──────────────────────────────────────────────────────────
+llama-index-graph-stores-neo4j==0.7.0
+neo4j==5.28.4
+
+# ── OpenAI (bundled with llama-index, not actively used) ──────────────────────
+llama-index-llms-openai==0.7.9
+llama-index-embeddings-openai==0.6.0
+openai==2.40.0
+tiktoken==0.13.0
+
+# ── Async / Event Loop ────────────────────────────────────────────────────────
+nest-asyncio==1.6.0          # Required for Python 3.13 nested async fix
+anyio==4.13.0
+aiohttp==3.14.0
+aiohappyeyeballs==2.6.2
+aiosignal==1.4.0
+aiosqlite==0.22.1
+sniffio==1.3.1
+
+# ── HTTP Clients ───────────────────────────────────────────────────────────────
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+requests==2.34.2
+urllib3==2.7.0
+certifi==2026.5.20
+charset-normalizer==3.4.7
+idna==3.18
+
+# ── Data Validation & Serialization ───────────────────────────────────────────
+pydantic==2.13.4
+pydantic_core==2.46.4
+annotated-types==0.7.0
+dataclasses-json==0.6.7
+marshmallow==3.26.2
+typing-inspect==0.9.0
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+mypy_extensions==1.1.0
+
+# ── Database / Storage ────────────────────────────────────────────────────────
+SQLAlchemy==2.0.50
+greenlet==3.5.1
+fsspec==2026.4.0
+networkx==3.6.1
+
+# ── NLP / Text Processing ─────────────────────────────────────────────────────
+nltk==3.9.4
+regex==2026.5.9
+numpy==2.4.6
+joblib==1.5.3
+dirtyjson==1.0.8
+
+# ── Templating & Prompting ────────────────────────────────────────────────────
+banks==2.4.2
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+griffe==2.0.2
+griffecli==2.0.2
+griffelib==2.0.2
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm==4.67.3
+click==8.4.1
+colorama==0.4.6
+tenacity==9.1.4
+Deprecated==1.3.1
+wrapt==2.2.1
+distro==1.9.0
+packaging==26.2
+platformdirs==4.10.0
+setuptools==82.0.1
+PyYAML==6.0.3
+python-dotenv==1.2.2
+pytz==2026.2
+pillow==12.2.0
+filetype==1.2.0
+tinytag==2.2.1
+Pygments==2.20.0
+jiter==0.15.0
+propcache==0.5.2
+frozenlist==1.8.0
+multidict==6.7.1
+yarl==1.24.2
+attrs==26.1.0
+
+# ── Testing (optional, can remove if not needed) ──────────────────────────────
+pytest==9.0.3
+pytest-asyncio==1.4.0
+pluggy==1.6.0
+iniconfig==2.3.0

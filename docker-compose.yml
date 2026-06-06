@@ -1,0 +1,20 @@
+
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j_db
+    ports:
+      - "7474:7474" # HTTP Web Browser Interface
+      - "7687:7687" # Bolt Protocol (Used by Python/App drivers)
+    environment:
+      - NEO4J_AUTH=neo4j/your_secure_password
+      # Uncomment the lines below to auto-download and enable the APOC plugin
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_import_file_use__neo4j__config=true
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - ./neo4j/data:/data       # Stores your database files
+      - ./neo4j/logs:/logs       # Stores database logs
+      - ./neo4j/import:/var/lib/neo4j/import # Directory for CSV imports
+      - ./neo4j/plugins:/plugins # Directory for manual plugin jars
